@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		4B05C5761BE9072E000E0BFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5751BE9072E000E0BFF /* main.m */; };
 		4B05C5791BE9072E000E0BFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5781BE9072E000E0BFF /* AppDelegate.m */; };
-		4B05C57C1BE9072E000E0BFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C57B1BE9072E000E0BFF /* ViewController.m */; };
-		4B05C57F1BE9072E000E0BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C57D1BE9072E000E0BFF /* Main.storyboard */; };
 		4B05C5811BE9072E000E0BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5801BE9072E000E0BFF /* Assets.xcassets */; };
 		4B05C5841BE9072E000E0BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5821BE9072E000E0BFF /* LaunchScreen.storyboard */; };
 		4B05C58F1BE9072E000E0BFF /* GFHupuSportsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C58E1BE9072E000E0BFF /* GFHupuSportsTests.m */; };
 		4B05C59A1BE9072E000E0BFF /* GFHupuSportsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5991BE9072E000E0BFF /* GFHupuSportsUITests.m */; };
+		4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5BF1BE90E67000E0BFF /* GFTabBarController.m */; };
+		4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5C21BE91071000E0BFF /* GFNavigationController.m */; };
+		4B05C5C61BE910E2000E0BFF /* GFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5C51BE910E2000E0BFF /* GFDiscoverViewController.m */; };
+		4B05C5C91BE910F5000E0BFF /* GFBBSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5C81BE910F5000E0BFF /* GFBBSViewController.m */; };
+		4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5CB1BE9110E000E0BFF /* GFNewsViewController.m */; };
+		4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5CE1BE91137000E0BFF /* GFGameViewController.m */; };
+		4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05C5D11BE91193000E0BFF /* GFProfileViewController.m */; };
+		4B05C5D41BE911ED000E0BFF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5D31BE911ED000E0BFF /* Profile.storyboard */; };
+		4B05C5D61BE91254000E0BFF /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5D51BE91254000E0BFF /* Discover.storyboard */; };
+		4B05C5D81BE9128B000E0BFF /* BBS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5D71BE9128B000E0BFF /* BBS.storyboard */; };
+		4B05C5DA1BE91298000E0BFF /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5D91BE91298000E0BFF /* News.storyboard */; };
+		4B05C5DC1BE912D3000E0BFF /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C5DB1BE912D3000E0BFF /* Game.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +49,6 @@
 		4B05C5751BE9072E000E0BFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B05C5771BE9072E000E0BFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B05C5781BE9072E000E0BFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B05C57A1BE9072E000E0BFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B05C57B1BE9072E000E0BFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4B05C57E1BE9072E000E0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B05C5801BE9072E000E0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B05C5831BE9072E000E0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B05C5851BE9072E000E0BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +58,25 @@
 		4B05C5951BE9072E000E0BFF /* GFHupuSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFHupuSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B05C5991BE9072E000E0BFF /* GFHupuSportsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFHupuSportsUITests.m; sourceTree = "<group>"; };
 		4B05C59B1BE9072E000E0BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B05C5BE1BE90E67000E0BFF /* GFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBarController.h; sourceTree = "<group>"; };
+		4B05C5BF1BE90E67000E0BFF /* GFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBarController.m; sourceTree = "<group>"; };
+		4B05C5C11BE91071000E0BFF /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNavigationController.h; sourceTree = "<group>"; };
+		4B05C5C21BE91071000E0BFF /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
+		4B05C5C41BE910E2000E0BFF /* GFDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFDiscoverViewController.h; sourceTree = "<group>"; };
+		4B05C5C51BE910E2000E0BFF /* GFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFDiscoverViewController.m; sourceTree = "<group>"; };
+		4B05C5C71BE910F5000E0BFF /* GFBBSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBBSViewController.h; sourceTree = "<group>"; };
+		4B05C5C81BE910F5000E0BFF /* GFBBSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBBSViewController.m; sourceTree = "<group>"; };
+		4B05C5CA1BE9110E000E0BFF /* GFNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewsViewController.h; sourceTree = "<group>"; };
+		4B05C5CB1BE9110E000E0BFF /* GFNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewsViewController.m; sourceTree = "<group>"; };
+		4B05C5CD1BE91137000E0BFF /* GFGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameViewController.h; sourceTree = "<group>"; };
+		4B05C5CE1BE91137000E0BFF /* GFGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameViewController.m; sourceTree = "<group>"; };
+		4B05C5D01BE91193000E0BFF /* GFProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFProfileViewController.h; sourceTree = "<group>"; };
+		4B05C5D11BE91193000E0BFF /* GFProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFProfileViewController.m; sourceTree = "<group>"; };
+		4B05C5D31BE911ED000E0BFF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4B05C5D51BE91254000E0BFF /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		4B05C5D71BE9128B000E0BFF /* BBS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BBS.storyboard; sourceTree = "<group>"; };
+		4B05C5D91BE91298000E0BFF /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		4B05C5DB1BE912D3000E0BFF /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +127,15 @@
 		4B05C5731BE9072E000E0BFF /* GFHupuSports */ = {
 			isa = PBXGroup;
 			children = (
-				4B05C5771BE9072E000E0BFF /* AppDelegate.h */,
-				4B05C5781BE9072E000E0BFF /* AppDelegate.m */,
-				4B05C57A1BE9072E000E0BFF /* ViewController.h */,
-				4B05C57B1BE9072E000E0BFF /* ViewController.m */,
-				4B05C57D1BE9072E000E0BFF /* Main.storyboard */,
+				4B05C5BD1BE90A2A000E0BFF /* Resource */,
+				4B05C5BC1BE90A11000E0BFF /* Tool */,
+				4B05C5AC1BE9089E000E0BFF /* Profile */,
+				4B05C5AB1BE9088F000E0BFF /* Discover */,
+				4B05C5AA1BE90845000E0BFF /* BBS */,
+				4B05C5A91BE90839000E0BFF /* News */,
+				4B05C5A81BE90822000E0BFF /* Game */,
+				4B05C5A71BE907A7000E0BFF /* Main */,
 				4B05C5801BE9072E000E0BFF /* Assets.xcassets */,
-				4B05C5821BE9072E000E0BFF /* LaunchScreen.storyboard */,
-				4B05C5851BE9072E000E0BFF /* Info.plist */,
 				4B05C5741BE9072E000E0BFF /* Supporting Files */,
 			);
 			path = GFHupuSports;
@@ -138,6 +165,205 @@
 				4B05C59B1BE9072E000E0BFF /* Info.plist */,
 			);
 			path = GFHupuSportsUITests;
+			sourceTree = "<group>";
+		};
+		4B05C5A71BE907A7000E0BFF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5821BE9072E000E0BFF /* LaunchScreen.storyboard */,
+				4B05C5851BE9072E000E0BFF /* Info.plist */,
+				4B05C5771BE9072E000E0BFF /* AppDelegate.h */,
+				4B05C5781BE9072E000E0BFF /* AppDelegate.m */,
+				4B05C5BE1BE90E67000E0BFF /* GFTabBarController.h */,
+				4B05C5BF1BE90E67000E0BFF /* GFTabBarController.m */,
+				4B05C5C11BE91071000E0BFF /* GFNavigationController.h */,
+				4B05C5C21BE91071000E0BFF /* GFNavigationController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		4B05C5A81BE90822000E0BFF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5BB1BE909F9000E0BFF /* Controller */,
+				4B05C5BA1BE909F1000E0BFF /* View */,
+				4B05C5B91BE909E5000E0BFF /* Model */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		4B05C5A91BE90839000E0BFF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5B81BE9097C000E0BFF /* Model */,
+				4B05C5B71BE90974000E0BFF /* View */,
+				4B05C5B61BE90969000E0BFF /* Controller */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		4B05C5AA1BE90845000E0BFF /* BBS */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5B51BE90913000E0BFF /* Model */,
+				4B05C5B41BE9090B000E0BFF /* Controller */,
+				4B05C5B31BE90903000E0BFF /* View */,
+			);
+			name = BBS;
+			sourceTree = "<group>";
+		};
+		4B05C5AB1BE9088F000E0BFF /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5B21BE908FB000E0BFF /* View */,
+				4B05C5B11BE908F2000E0BFF /* Controller */,
+				4B05C5B01BE908E7000E0BFF /* Model */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		4B05C5AC1BE9089E000E0BFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5AF1BE908B6000E0BFF /* Model */,
+				4B05C5AE1BE908B0000E0BFF /* View */,
+				4B05C5AD1BE908A7000E0BFF /* Controller */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		4B05C5AD1BE908A7000E0BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5D01BE91193000E0BFF /* GFProfileViewController.h */,
+				4B05C5D11BE91193000E0BFF /* GFProfileViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B05C5AE1BE908B0000E0BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5D31BE911ED000E0BFF /* Profile.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B05C5AF1BE908B6000E0BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B05C5B01BE908E7000E0BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B05C5B11BE908F2000E0BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5C41BE910E2000E0BFF /* GFDiscoverViewController.h */,
+				4B05C5C51BE910E2000E0BFF /* GFDiscoverViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B05C5B21BE908FB000E0BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5D51BE91254000E0BFF /* Discover.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B05C5B31BE90903000E0BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5D71BE9128B000E0BFF /* BBS.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B05C5B41BE9090B000E0BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5C71BE910F5000E0BFF /* GFBBSViewController.h */,
+				4B05C5C81BE910F5000E0BFF /* GFBBSViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B05C5B51BE90913000E0BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B05C5B61BE90969000E0BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5CA1BE9110E000E0BFF /* GFNewsViewController.h */,
+				4B05C5CB1BE9110E000E0BFF /* GFNewsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B05C5B71BE90974000E0BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5D91BE91298000E0BFF /* News.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B05C5B81BE9097C000E0BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B05C5B91BE909E5000E0BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B05C5BA1BE909F1000E0BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5DB1BE912D3000E0BFF /* Game.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B05C5BB1BE909F9000E0BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C5CD1BE91137000E0BFF /* GFGameViewController.h */,
+				4B05C5CE1BE91137000E0BFF /* GFGameViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B05C5BC1BE90A11000E0BFF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		4B05C5BD1BE90A2A000E0BFF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B05C5841BE9072E000E0BFF /* LaunchScreen.storyboard in Resources */,
+				4B05C5D41BE911ED000E0BFF /* Profile.storyboard in Resources */,
+				4B05C5DA1BE91298000E0BFF /* News.storyboard in Resources */,
+				4B05C5D61BE91254000E0BFF /* Discover.storyboard in Resources */,
 				4B05C5811BE9072E000E0BFF /* Assets.xcassets in Resources */,
-				4B05C57F1BE9072E000E0BFF /* Main.storyboard in Resources */,
+				4B05C5D81BE9128B000E0BFF /* BBS.storyboard in Resources */,
+				4B05C5DC1BE912D3000E0BFF /* Game.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +500,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B05C57C1BE9072E000E0BFF /* ViewController.m in Sources */,
+				4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */,
+				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
+				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
+				4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */,
+				4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */,
 				4B05C5791BE9072E000E0BFF /* AppDelegate.m in Sources */,
+				4B05C5C61BE910E2000E0BFF /* GFDiscoverViewController.m in Sources */,
 				4B05C5761BE9072E000E0BFF /* main.m in Sources */,
+				4B05C5C91BE910F5000E0BFF /* GFBBSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +544,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B05C57D1BE9072E000E0BFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B05C57E1BE9072E000E0BFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B05C5821BE9072E000E0BFF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
