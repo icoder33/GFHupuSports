@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,12 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - view
 
-- (void)setUpTabBar{
-    
-    self.tabBarItem.title = @"我";
-    
-}
 
 @end
