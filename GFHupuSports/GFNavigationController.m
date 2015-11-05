@@ -7,6 +7,7 @@
 //
 
 #import "GFNavigationController.h"
+#import <Masonry.h>
 
 @interface GFNavigationController ()
 
@@ -28,6 +29,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBar.translucent = NO;
+    
+    //添加logo图片
+    UIImageView *logoImageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"logo"]];
+    [self.navigationBar addSubview:logoImageView];
+    [logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.center.equalTo(self.navigationBar);
+        make.size.mas_equalTo(CGSizeMake(100, 32));
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
