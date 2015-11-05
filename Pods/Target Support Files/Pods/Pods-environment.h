@@ -61,6 +61,12 @@
 #define COCOAPODS_VERSION_MINOR_CRToast 0
 #define COCOAPODS_VERSION_PATCH_CRToast 9
 
+// HMSegmentedControl
+#define COCOAPODS_POD_AVAILABLE_HMSegmentedControl
+#define COCOAPODS_VERSION_MAJOR_HMSegmentedControl 1
+#define COCOAPODS_VERSION_MINOR_HMSegmentedControl 5
+#define COCOAPODS_VERSION_PATCH_HMSegmentedControl 2
+
 // JLRoutes
 #define COCOAPODS_POD_AVAILABLE_JLRoutes
 #define COCOAPODS_VERSION_MAJOR_JLRoutes 1

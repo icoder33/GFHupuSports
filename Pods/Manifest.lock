@@ -22,6 +22,7 @@ PODS:
     - AFNetworking/NSURLSession
   - AVOSCloud (3.1.2.9)
   - CRToast (0.0.9)
+  - HMSegmentedControl (1.5.2)
   - JLRoutes (1.5.3)
   - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - AVOSCloud (~> 3.1.2.6)
   - CRToast (~> 0.0.7)
+  - HMSegmentedControl
   - JLRoutes (~> 1.5)
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 0.8)
@@ -73,6 +75,7 @@ SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   AVOSCloud: 7d2406a4954c15c98363ce841b257b81cdba0bc9
   CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
   JLRoutes: 20555d00693855b71e80715eeaae6a930a33b2f5
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
