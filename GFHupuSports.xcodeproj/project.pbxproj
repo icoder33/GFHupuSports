@@ -178,6 +178,7 @@
 		4B05C9911BE923A3000E0BFF /* UM_colse_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8F91BE923A3000E0BFF /* UM_colse_btn@2x.png */; };
 		4B05C9921BE923A3000E0BFF /* weixin_btn_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FA1BE923A3000E0BFF /* weixin_btn_1@2x.png */; };
 		4B05C9931BE923A3000E0BFF /* weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FB1BE923A3000E0BFF /* weixin@2x.png */; };
+		4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +384,8 @@
 		4B05C8F91BE923A3000E0BFF /* UM_colse_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UM_colse_btn@2x.png"; sourceTree = "<group>"; };
 		4B05C8FA1BE923A3000E0BFF /* weixin_btn_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixin_btn_1@2x.png"; sourceTree = "<group>"; };
 		4B05C8FB1BE923A3000E0BFF /* weixin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixin@2x.png"; sourceTree = "<group>"; };
+		4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameHeaderView.h; sourceTree = "<group>"; };
+		4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameHeaderView.m; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -650,6 +653,8 @@
 			isa = PBXGroup;
 			children = (
 				4B05C5DB1BE912D3000E0BFF /* Game.storyboard */,
+				4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */,
+				4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1171,6 +1176,7 @@
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
 				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
 				4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */,
+				4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */,
 				4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */,
 				4B05C5791BE9072E000E0BFF /* AppDelegate.m in Sources */,
 				4B05C5C61BE910E2000E0BFF /* GFDiscoverViewController.m in Sources */,
