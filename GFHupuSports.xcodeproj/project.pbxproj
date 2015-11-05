@@ -179,6 +179,7 @@
 		4B05C9921BE923A3000E0BFF /* weixin_btn_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FA1BE923A3000E0BFF /* weixin_btn_1@2x.png */; };
 		4B05C9931BE923A3000E0BFF /* weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FB1BE923A3000E0BFF /* weixin@2x.png */; };
 		4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */; };
+		4B05CA4F1BEBB823000E0BFF /* GFGameTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA4E1BEBB823000E0BFF /* GFGameTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,6 +387,8 @@
 		4B05C8FB1BE923A3000E0BFF /* weixin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weixin@2x.png"; sourceTree = "<group>"; };
 		4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameHeaderView.h; sourceTree = "<group>"; };
 		4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameHeaderView.m; sourceTree = "<group>"; };
+		4B05CA4D1BEBB823000E0BFF /* GFGameTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameTableView.h; sourceTree = "<group>"; };
+		4B05CA4E1BEBB823000E0BFF /* GFGameTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameTableView.m; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -655,6 +658,8 @@
 				4B05C5DB1BE912D3000E0BFF /* Game.storyboard */,
 				4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */,
 				4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */,
+				4B05CA4D1BEBB823000E0BFF /* GFGameTableView.h */,
+				4B05CA4E1BEBB823000E0BFF /* GFGameTableView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1172,6 +1177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B05CA4F1BEBB823000E0BFF /* GFGameTableView.m in Sources */,
 				4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */,
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
 				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
