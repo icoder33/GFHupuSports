@@ -173,6 +173,12 @@
 		4B05C9921BE923A3000E0BFF /* weixin_btn_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FA1BE923A3000E0BFF /* weixin_btn_1@2x.png */; };
 		4B05C9931BE923A3000E0BFF /* weixin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C8FB1BE923A3000E0BFF /* weixin@2x.png */; };
 		4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */; };
+		4B05CA531BEC44A0000E0BFF /* GFSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA521BEC44A0000E0BFF /* GFSlideViewController.m */; };
+		4B05CA561BEC458A000E0BFF /* GFTopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA551BEC458A000E0BFF /* GFTopCollectionView.m */; };
+		4B05CA591BEC45A3000E0BFF /* GFBottomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA581BEC45A3000E0BFF /* GFBottomCollectionView.m */; };
+		4B05CA5C1BEC4728000E0BFF /* GFTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA5B1BEC4728000E0BFF /* GFTopCollectionViewCell.m */; };
+		4B05CA5F1BEC475C000E0BFF /* GFBottomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */; };
+		4B05CA621BEC9529000E0BFF /* GFGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA611BEC9529000E0BFF /* GFGameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -375,6 +381,18 @@
 		4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameHeaderView.h; sourceTree = "<group>"; };
 		4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameHeaderView.m; sourceTree = "<group>"; };
 		4B05CA501BEBBF56000E0BFF /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		4B05CA511BEC44A0000E0BFF /* GFSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSlideViewController.h; sourceTree = "<group>"; };
+		4B05CA521BEC44A0000E0BFF /* GFSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSlideViewController.m; sourceTree = "<group>"; };
+		4B05CA541BEC458A000E0BFF /* GFTopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopCollectionView.h; sourceTree = "<group>"; };
+		4B05CA551BEC458A000E0BFF /* GFTopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopCollectionView.m; sourceTree = "<group>"; };
+		4B05CA571BEC45A3000E0BFF /* GFBottomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBottomCollectionView.h; sourceTree = "<group>"; };
+		4B05CA581BEC45A3000E0BFF /* GFBottomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBottomCollectionView.m; sourceTree = "<group>"; };
+		4B05CA5A1BEC4728000E0BFF /* GFTopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopCollectionViewCell.h; sourceTree = "<group>"; };
+		4B05CA5B1BEC4728000E0BFF /* GFTopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopCollectionViewCell.m; sourceTree = "<group>"; };
+		4B05CA5D1BEC475C000E0BFF /* GFBottomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBottomCollectionViewCell.h; sourceTree = "<group>"; };
+		4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBottomCollectionViewCell.m; sourceTree = "<group>"; };
+		4B05CA601BEC9529000E0BFF /* GFGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameModel.h; sourceTree = "<group>"; };
+		4B05CA611BEC9529000E0BFF /* GFGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameModel.m; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -660,7 +678,7 @@
 		4B05C5BC1BE90A11000E0BFF /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				4B05CA501BEBBF56000E0BFF /* common.h */,
+				4B05CA631BECA65E000E0BFF /* GFCollectionView */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -818,6 +836,26 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		4B05CA631BECA65E000E0BFF /* GFCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4B05CA571BEC45A3000E0BFF /* GFBottomCollectionView.h */,
+				4B05CA501BEBBF56000E0BFF /* common.h */,
+				4B05CA511BEC44A0000E0BFF /* GFSlideViewController.h */,
+				4B05CA521BEC44A0000E0BFF /* GFSlideViewController.m */,
+				4B05CA541BEC458A000E0BFF /* GFTopCollectionView.h */,
+				4B05CA551BEC458A000E0BFF /* GFTopCollectionView.m */,
+				4B05CA581BEC45A3000E0BFF /* GFBottomCollectionView.m */,
+				4B05CA5D1BEC475C000E0BFF /* GFBottomCollectionViewCell.h */,
+				4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */,
+				4B05CA5A1BEC4728000E0BFF /* GFTopCollectionViewCell.h */,
+				4B05CA5B1BEC4728000E0BFF /* GFTopCollectionViewCell.m */,
+				4B05CA601BEC9529000E0BFF /* GFGameModel.h */,
+				4B05CA611BEC9529000E0BFF /* GFGameModel.m */,
+			);
+			name = GFCollectionView;
+			sourceTree = "<group>";
+		};
 		585935B1761905173392ED24 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +937,7 @@
 		4B05C5691BE9072E000E0BFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GF;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = wanggf;
 				TargetAttributes = {
@@ -1150,16 +1189,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B05CA621BEC9529000E0BFF /* GFGameModel.m in Sources */,
+				4B05CA591BEC45A3000E0BFF /* GFBottomCollectionView.m in Sources */,
 				4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */,
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
+				4B05CA5F1BEC475C000E0BFF /* GFBottomCollectionViewCell.m in Sources */,
 				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
+				4B05CA561BEC458A000E0BFF /* GFTopCollectionView.m in Sources */,
 				4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */,
 				4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */,
 				4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */,
+				4B05CA531BEC44A0000E0BFF /* GFSlideViewController.m in Sources */,
 				4B05C5791BE9072E000E0BFF /* AppDelegate.m in Sources */,
 				4B05C5C61BE910E2000E0BFF /* GFDiscoverViewController.m in Sources */,
 				4B05C5761BE9072E000E0BFF /* main.m in Sources */,
 				4B05C5C91BE910F5000E0BFF /* GFBBSViewController.m in Sources */,
+				4B05CA5C1BEC4728000E0BFF /* GFTopCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

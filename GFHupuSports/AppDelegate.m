@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GFTabBarController.h"
+#import "GFSlideViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,9 @@
     window.rootViewController = mainTabBarController;
     
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg"] forBarMetrics:UIBarMetricsDefault];
+    
+    GFSlideViewController *vc = [[GFSlideViewController  alloc] init];
+    window.rootViewController = vc;
     return YES;
 }
 
