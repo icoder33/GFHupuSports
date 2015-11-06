@@ -44,7 +44,6 @@
         [_bottomView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
         
         _bottomView.currentIndex = index;
-//        NSLog(@"懂了");
         
         
     }else if([object isKindOfClass:[GFBottomCollectionView class]] && _topView.currentIndex!= index){
@@ -52,7 +51,6 @@
         [_topView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
         
         _topView.currentIndex = index;
-//        NSLog(@"dongl");
     }
 
 }
@@ -68,7 +66,7 @@
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
     
-    _topView = [[GFTopCollectionView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 44) collectionViewLayout:layout];
+    _topView = [[GFTopCollectionView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 30) collectionViewLayout:layout];
     [self.view addSubview:_topView];
 }
 
@@ -82,7 +80,7 @@
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
     
-    _bottomView = [[GFBottomCollectionView alloc] initWithFrame:CGRectMake(0, 108 , ScreenWidth, ScreenHeight - 64 - 88) collectionViewLayout:layout];
+    _bottomView = [[GFBottomCollectionView alloc] initWithFrame:CGRectMake(0, 30 , ScreenWidth, ScreenHeight - 74) collectionViewLayout:layout];
     [self.view addSubview:_bottomView];
 }
     

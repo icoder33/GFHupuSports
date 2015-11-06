@@ -7,7 +7,6 @@
 //
 
 #import "GFGameViewController.h"
-#import <HMSegmentedControl.h>
 
 
 @interface GFGameViewController ()
@@ -20,10 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"One", @"Two", @"Three"]];
-    segmentedControl.frame = CGRectMake(10, 10, 300, 60);
-    [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:segmentedControl];
     
     
 }

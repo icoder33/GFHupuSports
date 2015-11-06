@@ -179,6 +179,9 @@
 		4B05CA5C1BEC4728000E0BFF /* GFTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA5B1BEC4728000E0BFF /* GFTopCollectionViewCell.m */; };
 		4B05CA5F1BEC475C000E0BFF /* GFBottomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */; };
 		4B05CA621BEC9529000E0BFF /* GFGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA611BEC9529000E0BFF /* GFGameModel.m */; };
+		4B05CA661BECAAA6000E0BFF /* GFNBAGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA651BECAAA6000E0BFF /* GFNBAGameView.m */; };
+		4B05CA6C1BECAF0F000E0BFF /* GFNBAGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CA6A1BECAF0F000E0BFF /* GFNBAGameCell.m */; };
+		4B05CA6D1BECAF0F000E0BFF /* GFNBAGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CA6B1BECAF0F000E0BFF /* GFNBAGameCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -393,6 +396,11 @@
 		4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBottomCollectionViewCell.m; sourceTree = "<group>"; };
 		4B05CA601BEC9529000E0BFF /* GFGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGameModel.h; sourceTree = "<group>"; };
 		4B05CA611BEC9529000E0BFF /* GFGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGameModel.m; sourceTree = "<group>"; };
+		4B05CA641BECAAA6000E0BFF /* GFNBAGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNBAGameView.h; sourceTree = "<group>"; };
+		4B05CA651BECAAA6000E0BFF /* GFNBAGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNBAGameView.m; sourceTree = "<group>"; };
+		4B05CA691BECAF0F000E0BFF /* GFNBAGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNBAGameCell.h; sourceTree = "<group>"; };
+		4B05CA6A1BECAF0F000E0BFF /* GFNBAGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNBAGameCell.m; sourceTree = "<group>"; };
+		4B05CA6B1BECAF0F000E0BFF /* GFNBAGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFNBAGameCell.xib; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -662,6 +670,11 @@
 				4B05C5DB1BE912D3000E0BFF /* Game.storyboard */,
 				4B05CA4A1BEBB20A000E0BFF /* GFGameHeaderView.h */,
 				4B05CA4B1BEBB20A000E0BFF /* GFGameHeaderView.m */,
+				4B05CA641BECAAA6000E0BFF /* GFNBAGameView.h */,
+				4B05CA651BECAAA6000E0BFF /* GFNBAGameView.m */,
+				4B05CA691BECAF0F000E0BFF /* GFNBAGameCell.h */,
+				4B05CA6A1BECAF0F000E0BFF /* GFNBAGameCell.m */,
+				4B05CA6B1BECAF0F000E0BFF /* GFNBAGameCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -839,12 +852,12 @@
 		4B05CA631BECA65E000E0BFF /* GFCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				4B05CA571BEC45A3000E0BFF /* GFBottomCollectionView.h */,
 				4B05CA501BEBBF56000E0BFF /* common.h */,
 				4B05CA511BEC44A0000E0BFF /* GFSlideViewController.h */,
 				4B05CA521BEC44A0000E0BFF /* GFSlideViewController.m */,
 				4B05CA541BEC458A000E0BFF /* GFTopCollectionView.h */,
 				4B05CA551BEC458A000E0BFF /* GFTopCollectionView.m */,
+				4B05CA571BEC45A3000E0BFF /* GFBottomCollectionView.h */,
 				4B05CA581BEC45A3000E0BFF /* GFBottomCollectionView.m */,
 				4B05CA5D1BEC475C000E0BFF /* GFBottomCollectionViewCell.h */,
 				4B05CA5E1BEC475C000E0BFF /* GFBottomCollectionViewCell.m */,
@@ -1065,6 +1078,7 @@
 				4B05C98B1BE923A3000E0BFF /* tab_news_1@2x.png in Resources */,
 				4B05C9821BE923A3000E0BFF /* share_pengyouquan_ic@2x.png in Resources */,
 				4B05C93D1BE923A3000E0BFF /* logo6@2x.png in Resources */,
+				4B05CA6D1BECAF0F000E0BFF /* GFNBAGameCell.xib in Resources */,
 				4B05C94B1BE923A3000E0BFF /* logo13@2x.png in Resources */,
 				4B05C93B1BE923A3000E0BFF /* logo5@2x.png in Resources */,
 				4B05C8FD1BE923A3000E0BFF /* 960x640.png in Resources */,
@@ -1195,9 +1209,11 @@
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
 				4B05CA5F1BEC475C000E0BFF /* GFBottomCollectionViewCell.m in Sources */,
 				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
+				4B05CA661BECAAA6000E0BFF /* GFNBAGameView.m in Sources */,
 				4B05CA561BEC458A000E0BFF /* GFTopCollectionView.m in Sources */,
 				4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */,
 				4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */,
+				4B05CA6C1BECAF0F000E0BFF /* GFNBAGameCell.m in Sources */,
 				4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */,
 				4B05CA531BEC44A0000E0BFF /* GFSlideViewController.m in Sources */,
 				4B05C5791BE9072E000E0BFF /* AppDelegate.m in Sources */,

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "324119DEBA469F974222940EF22934B01D4B43B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3B31DF655B646FD85813A3ACE705F8970ACE1A15" : 0,
+    "324119DEBA469F974222940EF22934B01D4B43B0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "052F78C6-4AD5-4D95-B551-B5A0F4F8FC62",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3B31DF655B646FD85813A3ACE705F8970ACE1A15" : "",
+    "324119DEBA469F974222940EF22934B01D4B43B0" : "GFHupuSports\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GFHupuSports",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GFHupuSports.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icoder33\/GFHupuSports.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324119DEBA469F974222940EF22934B01D4B43B0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:icoder33\/GFCollectionView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B31DF655B646FD85813A3ACE705F8970ACE1A15"
+    }
+  ]
+}

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class GFTopCollectionView;
+@class GFBottomCollectionView;
+
 @interface GFSlideViewController : UIViewController
+
+@property (nonatomic) GFTopCollectionView *topView;
+@property (nonatomic) GFBottomCollectionView *bottomView;
 
 @end

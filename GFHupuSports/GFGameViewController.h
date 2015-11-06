@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GFSlideViewController.h"
 
-@interface GFGameViewController : UIViewController
+@interface GFGameViewController : GFSlideViewController
 
 @end

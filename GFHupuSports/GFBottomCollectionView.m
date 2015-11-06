@@ -9,6 +9,7 @@
 #import "GFBottomCollectionView.h"
 #import "GFBottomCollectionViewCell.h"
 #import "common.h"
+#import "GFNBAGameView.h"
 
 static NSString * const cellId = @"bottomCell";
 
@@ -39,15 +40,15 @@ static NSString * const cellId = @"bottomCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    //return self.viewArray.count;
-    return 5;
+    return self.viewArray.count;
+    //return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     GFBottomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     cell.view = self.viewArray[indexPath.row];
-    cell.backgroundColor = [UIColor colorWithRed: (arc4random() % 256 / 256.0 ) green: ( arc4random() % 256 / 256.0 ) blue: ( arc4random() % 256 / 256.0 ) alpha:1];
+//    cell.backgroundColor = [UIColor colorWithRed: (arc4random() % 256 / 256.0 ) green: ( arc4random() % 256 / 256.0 ) blue: ( arc4random() % 256 / 256.0 ) alpha:1];
     return cell;
 }
 
@@ -63,7 +64,7 @@ static NSString * const cellId = @"bottomCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake(ScreenWidth, ScreenHeight - 64 - 88);
+    return CGSizeMake(ScreenWidth, ScreenHeight  - 74);
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
@@ -76,7 +77,19 @@ static NSString * const cellId = @"bottomCell";
     
     self.currentIndex = index;
     
+}
+
+- (NSArray *)viewArray{
     
-    
+    if (!_viewArray) {
+        
+        GFNBAGameView *nba = [[GFNBAGameView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+        GFNBAGameView *cba = [[GFNBAGameView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+        GFNBAGameView *eng = [[GFNBAGameView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+        GFNBAGameView *spn = [[GFNBAGameView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+        GFNBAGameView *gem = [[GFNBAGameView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+        _viewArray = @[nba,cba,eng,spn,gem];
+    }
+    return _viewArray;
 }
 @end

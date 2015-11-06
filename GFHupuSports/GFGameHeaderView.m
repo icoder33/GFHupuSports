@@ -24,8 +24,11 @@
     
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         
-        self.backgroundColor = RGB(235, 235, 235);
-        
+        self.contentView.backgroundColor = RGB(235, 235, 235);
+        [self timeLab];
+        [self kindLab];
+        [self rankView];
+        [self rankBtn];
     }
     
     return self;
@@ -36,6 +39,7 @@
     if (!_timeLab) {
         
         _timeLab = [[UILabel alloc] initWithFrame:CGRectZero];
+        _timeLab.font = [UIFont boldSystemFontOfSize:16];
         [self addSubview:_timeLab];
     }
     
@@ -48,6 +52,7 @@
         
         _kindLab = [[UILabel alloc] initWithFrame:CGRectZero];
         _kindLab.text = @"常规赛";
+        _kindLab.font = [UIFont boldSystemFontOfSize:16];
         [self addSubview:_kindLab];
     }
     
@@ -70,7 +75,9 @@
     if (!_rankBtn) {
         
         _rankBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _rankBtn.titleLabel.text = @"排行数据";
+        [_rankBtn setTitle:@"排行数据" forState:UIControlStateNormal];
+        [_rankBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _rankBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [self addSubview:_rankBtn];
     }
     return _rankBtn;
@@ -84,29 +91,29 @@
         
         make.left.equalTo(self.mas_left).with.offset(4);
         make.top.equalTo(self.mas_top).with.offset(4);
-        make.size.mas_equalTo(CGSizeMake(80, 20));
+        make.size.mas_equalTo(CGSizeMake(120, 20));
     }];
     
     [_kindLab mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.timeLab.mas_right).with.offset(4);
+        make.left.equalTo(self.timeLab.mas_right).with.offset(10);
         make.top.equalTo(self.mas_top).with.offset(4);
-        make.size.mas_equalTo(CGSizeMake(40, 20));
+        make.size.mas_equalTo(CGSizeMake(80, 20));
         
     }];
     
     [_rankView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.kindLab.mas_left).with.offset(24);
+        make.left.equalTo(self.kindLab.mas_right).with.offset(24);
         make.top.equalTo(self.mas_top).with.offset(4);
         make.size.mas_equalTo(CGSizeMake(20, 20));
     }];
     
     [_rankBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.mas_left).with.offset(4);
+        make.left.equalTo(self.rankView.mas_right).with.offset(4);
         make.top.equalTo(self.mas_top).with.offset(4);
-        make.size.mas_equalTo(CGSizeMake(40, 20));
+        make.size.mas_equalTo(CGSizeMake(60, 20));
         
     }];
     

@@ -9,6 +9,7 @@
 #import "GFTopCollectionViewCell.h"
 #import <Masonry.h>
 #import "GFGameModel.h"
+#import "common.h"
 
 
 @implementation GFTopCollectionViewCell
@@ -32,6 +33,7 @@
         
         _titleLab = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLab.textAlignment = NSTextAlignmentCenter;
+        _titleLab.textColor = [UIColor lightGrayColor];
         [self.contentView addSubview:_titleLab];
         
     }
@@ -51,10 +53,18 @@
     
     if (self.model.isSelected == 1) {
         
-        self.contentView.backgroundColor = [UIColor redColor];
+        //self.contentView.backgroundColor = [UIColor redColor];
+        [UIView animateWithDuration:0.5 animations:^{
+            _titleLab.textColor = [UIColor redColor];
+            _titleLab.font = [UIFont boldSystemFontOfSize:16];
+        }];
     }else{
         
-        self.contentView.backgroundColor = [UIColor whiteColor];
+        //self.contentView.backgroundColor = [UIColor whiteColor];
+        [UIView animateWithDuration:0.5 animations:^{
+            _titleLab.textColor = [UIColor lightGrayColor];
+            _titleLab.font = [UIFont boldSystemFontOfSize:12];
+        }];
     }
 
 }

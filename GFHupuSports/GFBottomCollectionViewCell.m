@@ -11,15 +11,18 @@
 @implementation GFBottomCollectionViewCell
 
 
-- (UIView *)view{
+
+- (void)setView:(UIView *)view{
     
-    if (!_view) {
-        _view = [[UIView alloc] initWithFrame:self.bounds];
-        [self.contentView addSubview:_view];
-    }
-    return _view;
+    _view = view;
+    [self.contentView addSubview:_view];
+    
 }
 
+- (void)layoutSubviews{
+    
+    [super layoutSubviews];
+}
 
 
 @end

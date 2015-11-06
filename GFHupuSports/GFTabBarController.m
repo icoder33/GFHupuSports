@@ -35,27 +35,27 @@
         GFNavigationController *gameNav = [gameSB instantiateInitialViewController];
         //GFGameViewController *gameVc = (GFGameViewController *)gameNav.topViewController;
         gameNav.tabBarItem.image = [[UIImage imageNamed:@"football_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        gameNav.tabBarItem.image = [[UIImage imageNamed:@"football_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ;
+        gameNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"football_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ;
         
         GFNavigationController *newsNav = [newsSB instantiateInitialViewController];
         //GFGameViewController *newsVc = (GFGameViewController *)newsNav.topViewController;
         newsNav.tabBarItem.image = [[UIImage imageNamed:@"news_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        newsNav.tabBarItem.image = [[UIImage imageNamed:@"news_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        newsNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"news_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
         GFNavigationController *bbsNav = [bbsSB instantiateInitialViewController];
         //GFGameViewController *bbsVc = (GFGameViewController *)bbsNav.topViewController;
         bbsNav.tabBarItem.image = [[UIImage imageNamed:@"bbs_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        bbsNav.tabBarItem.image = [[UIImage imageNamed:@"bbs_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        bbsNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"bbs_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
         GFNavigationController *discoverNav = [discoverSB instantiateInitialViewController];
         //GFGameViewController *discoverVc = (GFGameViewController *)discoverNav.topViewController;
         discoverNav.tabBarItem.image = [[UIImage imageNamed:@"discover_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        discoverNav.tabBarItem.image = [[UIImage imageNamed:@"discover_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        discoverNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"discover_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
         GFNavigationController *profileNav = [profileSB instantiateInitialViewController];
         //GFGameViewController *profileVc = (GFGameViewController *)profileNav.topViewController;
         profileNav.tabBarItem.image = [[UIImage imageNamed:@"i_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        profileNav.tabBarItem.image = [[UIImage imageNamed:@"i_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        profileNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"i_btn_1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
         self.viewControllers = @[gameNav,newsNav,bbsNav,discoverNav,profileNav];
         self.tabBar.translucent = NO;
