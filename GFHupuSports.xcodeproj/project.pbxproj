@@ -204,6 +204,11 @@
 		4B05CAAC1BED9299000E0BFF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05CAAB1BED9299000E0BFF /* ImageIO.framework */; };
 		4B05CAAE1BED92A1000E0BFF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05CAAD1BED92A1000E0BFF /* AdSupport.framework */; };
 		4B05CAB01BED92AC000E0BFF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B05CAAF1BED92AC000E0BFF /* libsqlite3.tbd */; };
+		4B05CAB31BED9DEC000E0BFF /* GFNewsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CAB21BED9DEC000E0BFF /* GFNewsTableView.m */; };
+		4B05CAB71BED9F8B000E0BFF /* GFNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CAB51BED9F8B000E0BFF /* GFNewsTableViewCell.m */; };
+		4B05CAB81BED9F8B000E0BFF /* GFNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CAB61BED9F8B000E0BFF /* GFNewsTableViewCell.xib */; };
+		4B05CABA1BEDA3E0000E0BFF /* NBANewsPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CAB91BEDA3E0000E0BFF /* NBANewsPlist.plist */; };
+		4B05CABD1BEDB390000E0BFF /* GFNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -459,6 +464,14 @@
 		4B05CAAB1BED9299000E0BFF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4B05CAAD1BED92A1000E0BFF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4B05CAAF1BED92AC000E0BFF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4B05CAB11BED9DEC000E0BFF /* GFNewsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewsTableView.h; sourceTree = "<group>"; };
+		4B05CAB21BED9DEC000E0BFF /* GFNewsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewsTableView.m; sourceTree = "<group>"; };
+		4B05CAB41BED9F8B000E0BFF /* GFNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewsTableViewCell.h; sourceTree = "<group>"; };
+		4B05CAB51BED9F8B000E0BFF /* GFNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewsTableViewCell.m; sourceTree = "<group>"; };
+		4B05CAB61BED9F8B000E0BFF /* GFNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFNewsTableViewCell.xib; sourceTree = "<group>"; };
+		4B05CAB91BEDA3E0000E0BFF /* NBANewsPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NBANewsPlist.plist; sourceTree = "<group>"; };
+		4B05CABB1BEDB390000E0BFF /* GFNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewsDetailViewController.h; sourceTree = "<group>"; };
+		4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewsDetailViewController.m; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -712,6 +725,8 @@
 			children = (
 				4B05C5CA1BE9110E000E0BFF /* GFNewsViewController.h */,
 				4B05C5CB1BE9110E000E0BFF /* GFNewsViewController.m */,
+				4B05CABB1BEDB390000E0BFF /* GFNewsDetailViewController.h */,
+				4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -720,6 +735,11 @@
 			isa = PBXGroup;
 			children = (
 				4B05C5D91BE91298000E0BFF /* News.storyboard */,
+				4B05CAB11BED9DEC000E0BFF /* GFNewsTableView.h */,
+				4B05CAB21BED9DEC000E0BFF /* GFNewsTableView.m */,
+				4B05CAB41BED9F8B000E0BFF /* GFNewsTableViewCell.h */,
+				4B05CAB51BED9F8B000E0BFF /* GFNewsTableViewCell.m */,
+				4B05CAB61BED9F8B000E0BFF /* GFNewsTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -769,6 +789,7 @@
 			children = (
 				4B05CA741BED921A000E0BFF /* ShareSDK */,
 				4B05CA631BECA65E000E0BFF /* GFCollectionView */,
+				4B05CAB91BEDA3E0000E0BFF /* NBANewsPlist.plist */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -1171,6 +1192,7 @@
 				4B05C9291BE923A3000E0BFF /* icon_回复@2x.png in Resources */,
 				4B05C9331BE923A3000E0BFF /* logo1@2x.png in Resources */,
 				4B05C90A1BE923A3000E0BFF /* AppIcon40x40@3x.png in Resources */,
+				4B05CAB81BED9F8B000E0BFF /* GFNewsTableViewCell.xib in Resources */,
 				4B05C9901BE923A3000E0BFF /* tab_vedio@2x.png in Resources */,
 				4B05C9871BE923A3000E0BFF /* tab_guess_1@2x.png in Resources */,
 				4B05C9381BE923A3000E0BFF /* logo3@3x.png in Resources */,
@@ -1291,6 +1313,7 @@
 				4B05C9571BE923A3000E0BFF /* logo19@2x.png in Resources */,
 				4B05C96B1BE923A3000E0BFF /* logo29@2x.png in Resources */,
 				4B05C9791BE923A3000E0BFF /* rank_ic@2x.png in Resources */,
+				4B05CABA1BEDA3E0000E0BFF /* NBANewsPlist.plist in Resources */,
 				4B05C9251BE923A3000E0BFF /* gold_ic@2x.png in Resources */,
 				4B05C9631BE923A3000E0BFF /* logo25@2x.png in Resources */,
 				4B05C93C1BE923A3000E0BFF /* logo5@3x.png in Resources */,
@@ -1367,6 +1390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B05CA621BEC9529000E0BFF /* GFGameModel.m in Sources */,
+				4B05CAB31BED9DEC000E0BFF /* GFNewsTableView.m in Sources */,
 				4B05CA591BEC45A3000E0BFF /* GFBottomCollectionView.m in Sources */,
 				4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */,
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
@@ -1376,6 +1400,7 @@
 				4B05CA561BEC458A000E0BFF /* GFTopCollectionView.m in Sources */,
 				4B05C5C31BE91071000E0BFF /* GFNavigationController.m in Sources */,
 				4B05CA4C1BEBB20A000E0BFF /* GFGameHeaderView.m in Sources */,
+				4B05CAB71BED9F8B000E0BFF /* GFNewsTableViewCell.m in Sources */,
 				4B05CA6C1BECAF0F000E0BFF /* GFNBAGameCell.m in Sources */,
 				4B05C5CF1BE91137000E0BFF /* GFGameViewController.m in Sources */,
 				4B05CA531BEC44A0000E0BFF /* GFSlideViewController.m in Sources */,
@@ -1383,6 +1408,7 @@
 				4B05C5C61BE910E2000E0BFF /* GFDiscoverViewController.m in Sources */,
 				4B05C5761BE9072E000E0BFF /* main.m in Sources */,
 				4B05CA731BED1BA4000E0BFF /* GFGameDetailViewController.m in Sources */,
+				4B05CABD1BEDB390000E0BFF /* GFNewsDetailViewController.m in Sources */,
 				4B05C5C91BE910F5000E0BFF /* GFBBSViewController.m in Sources */,
 				4B05CA5C1BEC4728000E0BFF /* GFTopCollectionViewCell.m in Sources */,
 			);

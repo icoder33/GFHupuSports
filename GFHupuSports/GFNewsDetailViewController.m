@@ -1,29 +1,32 @@
 //
-//  GFBBSViewController.m
+//  GFNewsDetailViewController.m
 //  GFHupuSports
 //
-//  Created by wanggf on 15/11/3.
+//  Created by wanggf on 15/11/7.
 //  Copyright © 2015年 wanggf. All rights reserved.
 //
 
-#import "GFBBSViewController.h"
+#import "GFNewsDetailViewController.h"
 
-@interface GFBBSViewController ()<UIWebViewDelegate>{
+@interface GFNewsDetailViewController ()<UIWebViewDelegate>{
     
     UIActivityIndicatorView *_activityIndicatorView;
-
 }
 
 @end
 
-@implementation GFBBSViewController
+@implementation GFNewsDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_bg"] forBarMetrics:UIBarMetricsDefault];
     [self setUpWebView];
+    
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 - (void)setUpWebView{
     
@@ -35,7 +38,7 @@
     [_activityIndicatorView setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleWhite] ;
     [self.view addSubview : _activityIndicatorView] ;
     
-    NSURL *url =[NSURL URLWithString:@"http://m.hupu.com/bbs/1048"];
+    NSURL *url =[NSURL URLWithString:@"http://m.hupu.com/nba/news/1970074.html"];
     NSURLRequest *request =[NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
     [self.view addSubview:webView];

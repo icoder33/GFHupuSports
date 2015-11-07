@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="GFNewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ooo-9o-Djy">
+                        <rect key="frame" x="10" y="10" width="90" height="96.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="HYu-bl-Pxk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休斯顿火箭勇夺总冠军" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-jy-EdF">
+                        <rect key="frame" x="110" y="10" width="255" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="abu-hU-B8a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军休斯顿火箭拿到总冠军" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFh-ek-2c0">
+                        <rect key="frame" x="110" y="44" width="255" height="42.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.80482456140000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_ic_comment_msg_night.png" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-WV-VXS">
+                        <rect key="frame" x="343" y="86" width="22" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="SUf-Hb-V9V"/>
+                            <constraint firstAttribute="height" constant="20" id="pup-PS-5H1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtK-j2-dPW">
+                        <rect key="frame" x="301" y="84" width="40" height="24"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Bbq-Mx-fdu"/>
+                            <constraint firstAttribute="height" constant="24" id="yC8-Vo-6P4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.80482456140000003" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sjb-jy-EdF" secondAttribute="trailing" constant="10" id="0iE-GF-Hon"/>
+                    <constraint firstAttribute="bottom" secondItem="Ooo-9o-Djy" secondAttribute="bottom" constant="10" id="5Pe-B0-Sn4"/>
+                    <constraint firstItem="BFh-ek-2c0" firstAttribute="leading" secondItem="Ooo-9o-Djy" secondAttribute="trailing" constant="10" id="9Ub-gK-pFn"/>
+                    <constraint firstAttribute="trailing" secondItem="2i8-WV-VXS" secondAttribute="trailing" constant="10" id="BHh-sx-o6r"/>
+                    <constraint firstItem="BFh-ek-2c0" firstAttribute="bottom" secondItem="Ooo-9o-Djy" secondAttribute="bottom" constant="-20" id="FsP-dg-0oG"/>
+                    <constraint firstItem="Sjb-jy-EdF" firstAttribute="leading" secondItem="Ooo-9o-Djy" secondAttribute="trailing" constant="10" id="NQN-OS-iIc"/>
+                    <constraint firstItem="Ooo-9o-Djy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aXN-5O-RM0"/>
+                    <constraint firstAttribute="bottom" secondItem="2i8-WV-VXS" secondAttribute="bottom" constant="10" id="afh-b6-Zin"/>
+                    <constraint firstAttribute="trailing" secondItem="BFh-ek-2c0" secondAttribute="trailing" constant="10" id="f8t-9e-V5a"/>
+                    <constraint firstItem="BFh-ek-2c0" firstAttribute="top" secondItem="Sjb-jy-EdF" secondAttribute="bottom" constant="4" id="gMr-7W-WtB"/>
+                    <constraint firstAttribute="bottom" secondItem="QtK-j2-dPW" secondAttribute="bottom" constant="8.5" id="hDl-kf-IlP"/>
+                    <constraint firstItem="Ooo-9o-Djy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iwK-0l-z5N"/>
+                    <constraint firstItem="2i8-WV-VXS" firstAttribute="leading" secondItem="QtK-j2-dPW" secondAttribute="trailing" constant="2" id="qUy-4d-vIT"/>
+                    <constraint firstItem="Sjb-jy-EdF" firstAttribute="top" secondItem="Ooo-9o-Djy" secondAttribute="top" id="rEg-Ds-aHr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="contentLab" destination="BFh-ek-2c0" id="BQJ-U4-ViU"/>
+                <outlet property="newsImageView" destination="Ooo-9o-Djy" id="5lR-fh-iLQ"/>
+                <outlet property="titleLab" destination="Sjb-jy-EdF" id="9P5-Gb-GIs"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="211.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news_ic_comment_msg_night.png" width="15" height="15"/>
+    </resources>
+</document>
