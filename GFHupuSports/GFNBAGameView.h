@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^cellSelectBlock)(NSInteger);
+
 @interface GFNBAGameView : UITableView<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,copy) cellSelectBlock block;
 
 @end

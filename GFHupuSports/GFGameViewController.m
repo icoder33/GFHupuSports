@@ -7,6 +7,9 @@
 //
 
 #import "GFGameViewController.h"
+#import "GFNBAGameView.h"
+#import "GFBottomCollectionView.h"
+#import "GFGameDetailViewController.h"
 
 
 @interface GFGameViewController ()
@@ -17,25 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setUpNavBar];
+    
+    __weak typeof(self) weakSelf = self;
+    GFNBAGameView *nbaView = self.bottomView.viewArray[0];
+    nbaView.block = ^(NSInteger row){
+        
+        GFGameDetailViewController *gameDetailVc = [[GFGameDetailViewController alloc] init];
+        [weakSelf.navigationController pushViewController:gameDetailVc animated:YES];
+    };
     
     
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setUpNavBar{
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_bg"] forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.backBarButtonItem = barButtonItem;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
-*/
 
 @end

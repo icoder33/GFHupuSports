@@ -76,6 +76,14 @@ static NSString * const headerId = @"headerCell";
     return 36;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //由于是虚拟数据 所以不作严谨要求了 传过去值肯定是会变 爱咋咋地了
+    self.block(indexPath.row);
+}
+
+
+
 
 
 @end
