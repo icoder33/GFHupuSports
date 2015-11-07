@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GFDiscoverViewController : UIViewController
+@interface GFDiscoverViewController : UITableViewController
 
 @end

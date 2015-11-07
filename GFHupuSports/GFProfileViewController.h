@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GFProfileViewController : UIViewController
+@interface GFProfileViewController : UITableViewController
 
 @end
