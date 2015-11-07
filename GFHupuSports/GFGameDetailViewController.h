@@ -10,4 +10,6 @@
 
 @interface GFGameDetailViewController : UIViewController
 
+@property (nonatomic,assign) NSInteger teamTag;
+
 @end

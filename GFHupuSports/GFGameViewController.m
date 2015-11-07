@@ -27,6 +27,7 @@
     nbaView.block = ^(NSInteger row){
         
         GFGameDetailViewController *gameDetailVc = [[GFGameDetailViewController alloc] init];
+        gameDetailVc.teamTag = row;
         [weakSelf.navigationController pushViewController:gameDetailVc animated:YES];
     };
     
