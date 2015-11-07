@@ -8,36 +8,38 @@
 
 #import "GFNewsTableView.h"
 #import "GFNewsTableViewCell.h"
+#import <MJRefresh.h>
+#import <SVPullToRefresh.h>
 
 static NSString *  const cellId = @"newsId";
 
 @interface GFNewsTableView (){
     
-    NSArray *_dataArray;
+    NSArray *_kArray;
 }
 
 @end
 
 @implementation GFNewsTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
     
     if (self = [super initWithFrame:frame style:style]) {
         
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"NBANewsPlist" ofType:@"plist"];
-        _dataArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+        _kArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+        _dataArray = [NSMutableArray array];
+        [_dataArray addObjectsFromArray:_kArray];
         self.dataSource = self;
         self.delegate = self;
         [self registerNib:[UINib nibWithNibName:@"GFNewsTableViewCell" bundle:nil] forCellReuseIdentifier:cellId];
-        //NSLog(@"%@",_dataArray);
+        __weak typeof(self) weakSelf = self;
+        self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            [weakSelf addMoreData];
+        }];
+
     }
     return self;
 }
@@ -75,6 +77,14 @@ static NSString *  const cellId = @"newsId";
     
     
     self.block();
+}
+
+- (void)addMoreData{
+    
+    [_dataArray addObjectsFromArray:_kArray];
+    [self reloadData];
+    [self.footer endRefreshing];
+    
 }
 
 @end

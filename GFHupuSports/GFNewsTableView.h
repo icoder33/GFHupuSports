@@ -14,5 +14,6 @@ typedef void(^cellSelectBlock)();
 
 
 @property (nonatomic,copy) cellSelectBlock block;
+@property (nonatomic) NSMutableArray *dataArray;
 
 @end

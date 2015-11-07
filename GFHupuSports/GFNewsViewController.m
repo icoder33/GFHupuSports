@@ -29,7 +29,7 @@
 
 - (void)setUpTableView{
     
-    _newsTableView = [[GFNewsTableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64) style:UITableViewStyleGrouped];
+    _newsTableView = [[GFNewsTableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 44) style:UITableViewStyleGrouped];
     
     __weak typeof(self) weakSelf = self;
     _newsTableView.block = ^{
@@ -38,6 +38,7 @@
         [weakSelf.navigationController pushViewController:newsDetailVc animated:YES];
         
     };
+    
     [self.view addSubview:_newsTableView];
 }
 
