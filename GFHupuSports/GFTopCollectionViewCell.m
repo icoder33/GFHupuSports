@@ -71,7 +71,6 @@
 
 - (void)setModel:(GFGameModel *)model{
     
-    NSLog(@"%d",model.isSelected);
     
     _model = model;
     [self setNeedsLayout];

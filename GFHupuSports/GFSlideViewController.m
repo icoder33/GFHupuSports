@@ -33,6 +33,7 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    
     NSNumber *number = [change objectForKey:@"new"];
     
     NSInteger index = [number integerValue];
@@ -45,12 +46,15 @@
         
         _bottomView.currentIndex = index;
         
+        NSLog(@"上面动了 下面再动");
         
     }else if([object isKindOfClass:[GFBottomCollectionView class]] && _topView.currentIndex!= index){
         
         [_topView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
         
         _topView.currentIndex = index;
+        NSLog(@"下面动了 上面再动");
+        
     }
 
 }

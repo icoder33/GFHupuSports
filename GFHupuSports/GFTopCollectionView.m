@@ -34,6 +34,7 @@ static NSString * const cellId = @"topCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
+    NSLog(@"-----%lu",self.gameModelArray.count);
     return self.gameModelArray.count;
     //return 5;
 }
@@ -55,10 +56,7 @@ static NSString * const cellId = @"topCell";
         
     }
     
-//    //NSIndexPath *indexPathSp = [NSIndexPath indexPathForItem:self.currentIndex inSection:0];
-//    GFTopCollectionViewCell *cellSp = (GFTopCollectionViewCell *)[self cellForItemAtIndexPath:indexPath];
-//    cellSp.isSelected = YES;
-//
+
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -70,7 +68,7 @@ static NSString * const cellId = @"topCell";
     
     _currentIndex = currentIndex;
     NSMutableArray *array = [NSMutableArray array];
-    for (int i; i < self.gameModelArray.count; i++) {
+    for (int i = 0; i < self.gameModelArray.count; i++) {
         
         GFGameModel *model = self.gameModelArray[i];
         if (i == currentIndex) {
@@ -98,7 +96,7 @@ static NSString * const cellId = @"topCell";
             model.title = titleArray[i];
             if (i == 0) {
                 model.isSelected = YES;
-                NSLog(@"创建玩");
+                
             }else{
                 model.isSelected = NO;
             }
