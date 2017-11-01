@@ -209,6 +209,7 @@
 		4B05CAB81BED9F8B000E0BFF /* GFNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CAB61BED9F8B000E0BFF /* GFNewsTableViewCell.xib */; };
 		4B05CABA1BEDA3E0000E0BFF /* NBANewsPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CAB91BEDA3E0000E0BFF /* NBANewsPlist.plist */; };
 		4B05CABD1BEDB390000E0BFF /* GFNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */; };
+		4B92AC031E756E2200A9E08C /* GFCXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B92AC021E756E2200A9E08C /* GFCXViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -472,6 +473,8 @@
 		4B05CAB91BEDA3E0000E0BFF /* NBANewsPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NBANewsPlist.plist; sourceTree = "<group>"; };
 		4B05CABB1BEDB390000E0BFF /* GFNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewsDetailViewController.h; sourceTree = "<group>"; };
 		4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewsDetailViewController.m; sourceTree = "<group>"; };
+		4B92AC011E756E2200A9E08C /* GFCXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCXViewController.h; sourceTree = "<group>"; };
+		4B92AC021E756E2200A9E08C /* GFCXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFCXViewController.m; sourceTree = "<group>"; };
 		63BFBADD9C8D7310022C858B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4A1C36F848CC64F586CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -727,6 +730,8 @@
 				4B05C5CB1BE9110E000E0BFF /* GFNewsViewController.m */,
 				4B05CABB1BEDB390000E0BFF /* GFNewsDetailViewController.h */,
 				4B05CABC1BEDB390000E0BFF /* GFNewsDetailViewController.m */,
+				4B92AC011E756E2200A9E08C /* GFCXViewController.h */,
+				4B92AC021E756E2200A9E08C /* GFCXViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1394,6 +1399,7 @@
 				4B05CA591BEC45A3000E0BFF /* GFBottomCollectionView.m in Sources */,
 				4B05C5C01BE90E67000E0BFF /* GFTabBarController.m in Sources */,
 				4B05C5CC1BE9110E000E0BFF /* GFNewsViewController.m in Sources */,
+				4B92AC031E756E2200A9E08C /* GFCXViewController.m in Sources */,
 				4B05CA5F1BEC475C000E0BFF /* GFBottomCollectionViewCell.m in Sources */,
 				4B05C5D21BE91193000E0BFF /* GFProfileViewController.m in Sources */,
 				4B05CA661BECAAA6000E0BFF /* GFNBAGameView.m in Sources */,

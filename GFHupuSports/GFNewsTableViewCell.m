@@ -12,9 +12,10 @@
 @implementation GFNewsTableViewCell
 
 - (void)awakeFromNib {
-    
+    [super awakeFromNib];
     self.newsImageView.layer.cornerRadius = 4;
     self.newsImageView.layer.masksToBounds = YES;
+    self.newsImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
@@ -28,7 +29,11 @@
     
     [super layoutSubviews];
     NSString *urlStr = self.dataDic[@"newsIcon"];
-    [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr]];
+  //  [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr]];
+    [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        
+    }];
     self.titleLab.text = self.dataDic[@"title"];
     self.contentLab.text = self.dataDic[@"content"];
     
